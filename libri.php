@@ -14,10 +14,12 @@
 
 
 
-        while($i <=0){
+        while($i >=3){
 
             echo fgets($myfile);
             echo "<br>";
+            $i = 
+
 
         }
         
