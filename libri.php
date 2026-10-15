@@ -6,10 +6,24 @@
     <title>Document</title>
 </head>
 <body>
+
     <?php
-        $libri = fopen("libri.txt", "r") or die("Error non si puo aprire il file");
-        echo fread($libri, filesize("libri.txt"));
-        fclose($libri);
-    ?>
+        $myfile = fopen("libri.txt", "r") or die("Unable to open file!");
+
+        $i = 0; 
+
+
+
+        while($i <=0){
+
+            echo fgets($myfile);
+            echo "<br>";
+
+        }
+        
+        fclose($myfile);
+        ?>
+
+    
 </body>
 </html>
