@@ -7,9 +7,9 @@
 </head>
 <body>
     <?php
-        $myfile = fopen("libri.txt", "r") or die("Error non si puo aprire il file");
-        echo fread($myfile, filesize("libri.txt"));
-        fclose($myfile);
+        $libri = fopen("libri.txt", "r") or die("Error non si puo aprire il file");
+        echo fread($libri, filesize("libri.txt"));
+        fclose($libri);
     ?>
 </body>
 </html>
